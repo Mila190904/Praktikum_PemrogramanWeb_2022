@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dosen</title>
 </head>
+<br>
 <body>
-    <h3>Dosen STT - NF</h3>
-    <table border="1">
+    <div class="col-md-12">
+    <h4 style="text-align: center;">Dosen</h4>
+    <table border="1"  class="table">
         <thead>
-            <tr align='center'>
-                <th width = '40'>No</th>
-                <th width = '200'>NIDN</th>
-                <th width = '200'>Pendidikan</th>
-                <th width='200'>Action</th>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>NIDN</th>
+                <th>Pendidikan</th>
             </tr>
         </thead>
         <tbody>
             <?php
-            $nomor =1;
-            foreach ($dosen as $dsn) {
+            $nomor = 1;
+            foreach ($dosen as $dsn){
             ?>
-            <tr align='center'>
+            <tr>
                 <td><?php echo $nomor ?></td>
+                <td><?php echo $dsn -> nama ?></td>
                 <td><?php echo $dsn -> nidn ?></td>
                 <td><?php echo $dsn -> pendidikan ?></td>
-                <td>
-                    <a href="<?php echo base_url("index.php/mahasiswa/detail_dosen/$dsn->id") ?>">Detail; </a>
-                </td>
             </tr>
             <?php
             $nomor++;
             }
             ?>
         </tbody>
-    </table>
+    </table>    
+</div>  
 </body>
 </html>

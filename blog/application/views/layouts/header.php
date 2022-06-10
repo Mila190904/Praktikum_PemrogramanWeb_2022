@@ -26,10 +26,10 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">E-Learning Nurul Fikri </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="<?php echo base_url('index.php/home/index') ?>" class="list-group-item list-group-item-action bg-light">Dashboard</a>
         <a href="<?php echo base_url('index.php/mahasiswa/index') ?>" class="list-group-item list-group-item-action bg-light">Mahasiswa</a>
-        <a href="<?php echo base_url('index.php/mahasiswa/dosen') ?>" class="list-group-item list-group-item-action bg-light">Dosen</a>
-        <a href="<?php echo base_url('index.php/mahasiswa/matakuliah') ?>" class="list-group-item list-group-item-action bg-light">Mata Kuliah</a>
+        <a href="<?php echo base_url('index.php/dosen/index') ?>" class="list-group-item list-group-item-action bg-light">Dosen</a>
+        <a href="<?php echo base_url('index.php/matakuliah/index') ?>" class="list-group-item list-group-item-action bg-light">Mata Kuliah</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
       </div>
@@ -54,16 +54,8 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url("index.php/login/logout") ?>">Logout</a>
             </li>
           </ul>
         </div>
